@@ -1,0 +1,1 @@
+In this project, I will deconstruct a webpage (Google Hompage) and rebuild it. My intent is to practice creating a page and styling it. The goal here is to make a copy of the page using the HTML and CSS skills that I have been working on.
