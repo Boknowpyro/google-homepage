@@ -3,11 +3,35 @@ html, body {
     margin: 0;
 }
 
-a{
+nav a{
     font-family: arial, sans-serif;
-    
+    text-decoration: none;
 }
 
-img {
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 13px;
+   
+}
+
+.nav-left {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    /* margin: 10px 10px 0 0; */
+    padding-left: 15px;
+}
+
+.nav-left li {
+    margin: 1em;
+}
+
+.nav-right {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-right img {
     width: 1.2em;
 }
