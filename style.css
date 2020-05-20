@@ -1,12 +1,15 @@
 html, body {
-    height: 100%;
+    
     margin: 0;
     font-family: arial, sans-serif;
    
 }
 
-nav {
+
+/* top navigation bar done with basic layout tools */
+.navbar {
     position: fixed;
+    background-color: #ffffff;
     width: 100%;
     top: 0px;
 }
@@ -61,3 +64,57 @@ nav {
     color: #ffffff;
     padding: 0 1em;
 }
+
+.viewport {
+    height: 100vh;
+    
+}
+
+
+/* Imitation of .navbar */
+
+footer {
+    height: 2.5em;
+    line-height: 40px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+footer ul {
+    list-style: none;
+    line-height: 30px;
+    margin: 0px;
+    padding: 5px 30px 10px 30px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    display: block;
+}
+
+footer .info-left {
+    float: left;
+}
+
+footer .info-left li {
+    margin-right: 1.5em;
+}
+
+footer .info-right{
+    float: right;
+}
+
+footer .info-right li {
+    margin-left: 1.5em;
+}
+
+footer .info-item {
+    float: left
+} 
+
