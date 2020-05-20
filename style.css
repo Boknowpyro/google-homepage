@@ -1,37 +1,63 @@
 html, body {
     height: 100%;
     margin: 0;
-}
-
-nav a{
     font-family: arial, sans-serif;
-    text-decoration: none;
-}
-
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 13px;
    
 }
 
-.nav-left {
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000000;
+    display: block;
+}
+
+.nav-item img {
+    width: 20px;
+}
+
+
+
+.navbar ul {
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    /* margin: 10px 10px 0 0; */
-    padding-left: 15px;
+    line-height: 30px;
+    margin: 0px;
+    padding: 20px 30px;
+}
+
+
+.nav-left {
+    float: left;
 }
 
 .nav-left li {
-    margin: 1em;
+    margin-right: 1.5em;
 }
 
-.nav-right {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+.nav-right{
+    float: right;
 }
-.nav-right img {
-    width: 1.2em;
+
+.nav-right li {
+    margin-left: 1.5em;
+}
+
+.nav-item {
+    float: left
+}
+
+.nav-right .nav-item:nth-child(3) a{
+    padding-top: 5px;
+}
+
+ .nav-right .nav-item:last-child a{
+    background-color: #4285f4;
+    color: #ffffff;
+    padding: 0 1em;
 }
