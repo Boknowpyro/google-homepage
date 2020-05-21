@@ -65,10 +65,32 @@ html, body {
     padding: 0 1em;
 }
 
+/* Centering logo and search in center of screen */
+
 .viewport {
     height: 100vh;
-    
+
 }
+
+.viewport img{
+    display: block;
+    margin: auto;
+    padding-top: 175px;
+}
+
+.input {
+    position: absolute;
+    margin: auto;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 50px;
+    
+  }
 
 
 /* Imitation of .navbar */
