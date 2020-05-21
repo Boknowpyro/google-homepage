@@ -5,7 +5,7 @@ html, body {
    
 }
 
-
+/* NAVBAR */
 /* top navigation bar done with basic layout tools */
 .navbar {
     position: fixed;
@@ -63,8 +63,10 @@ html, body {
     background-color: #4285f4;
     color: #ffffff;
     padding: 0 1em;
+    font-weight: bold;
 }
 
+/* Center Section */
 /* Centering logo and search in center of screen */
 
 .viewport {
@@ -72,13 +74,13 @@ html, body {
 
 }
 
-.viewport img{
+#logo {
     display: block;
     margin: auto;
     padding-top: 175px;
 }
 
-.input {
+.search {
     position: absolute;
     margin: auto;
     top: 30px;
@@ -90,9 +92,34 @@ html, body {
     border: 1px solid rgba(0, 0, 0, 0.253);
     border-radius: 50px;
     
+    display: grid;
+    grid-template-columns: 50px 500px 50px;
+    align-items: center;
+   
   }
 
+  .search-sprite {
+      width: 1.5em;
+      margin: auto;
+      padding-top: 5px;
+      padding-left: 5px;
+  }
 
+  .voice-search {
+      width: 1.8em;
+      margin: auto;
+  }
+
+  .search input {
+      height: 2.5em;
+      border: none;
+  }
+
+.search input:focus {
+    outline-color: transparent;
+}
+
+/* FOOTER */
 /* Imitation of .navbar */
 
 footer {
