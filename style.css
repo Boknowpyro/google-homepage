@@ -5,6 +5,9 @@ html, body {
    
 }
 
+a {
+    color: #5F6368;;
+}
 /* -------------------------------------------------- */
 /* NAVBAR */
 /* top navigation bar done with basic layout tools */
@@ -15,18 +18,26 @@ html, body {
     top: 0px;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     font-size: 13px;
-    color: #000000;
     display: block;
 }
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+
 
 .nav-item img {
     width: 20px;
 }
 
-
+.nav-item img:hover {
+    width: 22px;
+}
 
 .navbar ul {
     list-style: none;
@@ -60,11 +71,19 @@ html, body {
     padding-top: 5px;
 }
 
+.nav-right .nav-item:nth-child(3) a:hover {
+    color: rgba(0, 0, 0, 0.753);
+}
+
  .nav-right .nav-item:last-child a{
     background-color: #4285f4;
     color: #ffffff;
     padding: 0 1em;
     font-weight: bold;
+}
+
+.nav-right .nav-item:last-child a:hover{
+    text-decoration: none;
 }
 
 /* -------------------------------------------------- */
@@ -73,26 +92,28 @@ html, body {
 
 .viewport {
     height: 100vh;
-
 }
 
 #logo {
     display: block;
     margin: auto;
-    padding-top: 175px;
+    padding-top: 210px;
 }
 
 .search {
     margin: 30px auto;
     width: 600px;
     height: 45px;
-    border: 1px solid rgba(0, 0, 0, 0.253);
+    border: 1px solid rgba(0, 0, 0, 0.158);
     border-radius: 50px;
     
     display: grid;
     grid-template-columns: 50px 500px 50px;
     align-items: center;
-   
+  }
+
+  .search:hover {
+    box-shadow: 0px 1px 5px lightgrey;
   }
 
   .search-sprite {
@@ -119,13 +140,21 @@ html, body {
 .search-button {
     display: flex;
     justify-content: center;
-    
 }
 
 .search-button input {
     display: block;
-    border-color: none;
+    margin: 5px;
+    color: #5F6368;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
+
+.search-button input:hover {
+    border: 1px solid darkgrey;
+}
+
 /* -------------------------------------------------- */
 /* FOOTER */
 /* Imitation of .navbar */
@@ -151,8 +180,11 @@ footer ul {
 footer a {
     text-decoration: none;
     font-size: 14px;
-    color: #000000;
     display: block;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer .info-left {
