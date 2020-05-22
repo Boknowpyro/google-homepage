@@ -153,6 +153,7 @@ a {
 
 .search-button input:hover {
     border: 1px solid darkgrey;
+    cursor: pointer;
 }
 
 /* -------------------------------------------------- */
